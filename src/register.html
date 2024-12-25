@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="./output.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+        <title>Register - bubbleTalk</title>
+    </head>
+    <body class="h-screen font-poppins">
+        <main class="flex h-screen items-center justify-center">
+            <div class="flex h-screen w-full max-w-5xl flex-col md:flex-row">
+                <section id="form-register" class="flex flex-col justify-center p-6 sm:p-12 md:w-1/2 md:p-16 lg:px-24">
+                    <div class="mb-8 flex items-center">
+                        <img alt="bubbleTalk logo" class="mr-3 h-8 w-8 sm:h-10 sm:w-10" src="assets/images/logo2.webp" />
+                        <span class="text-lg font-bold text-black-color sm:text-xl">bubbleTalk</span>
+                    </div>
+
+                    <!-- Header -->
+                    <h2 class="mb-3 text-2xl font-bold text-black-color sm:text-3xl">Register</h2>
+                    <p class="mb-8 text-sm text-gray-color sm:text-base">Buat akun untuk mulai berinteraksi di bubbleTalk! 🤝</p>
+
+                    <!-- Form -->
+                    <form class="space-y-6">
+                        <div class="space-y-2">
+                            <label class="block text-sm font-medium text-black-color sm:text-base" for="username"> Username </label>
+                            <input class="w-full rounded-full border px-4 py-3 text-sm text-gray-color transition-colors duration-200 focus:border-primary-color focus:outline-none sm:text-base" id="username" placeholder="Write your username" type="text" />
+                        </div>
+
+                        <div class="space-y-2">
+                            <label class="block text-sm font-medium text-black-color sm:text-base" for="email"> Email </label>
+                            <input class="w-full rounded-full border px-4 py-3 text-sm text-gray-color transition-colors duration-200 focus:border-primary-color focus:outline-none sm:text-base" id="email" placeholder="Write your email" type="email" />
+                        </div>
+
+                        <div class="space-y-2">
+                            <label class="block text-sm font-medium text-black-color sm:text-base" for="password"> Password </label>
+                            <input class="w-full rounded-full border px-4 py-3 text-sm text-gray-color transition-colors duration-200 focus:border-primary-color focus:outline-none sm:text-base" id="password" placeholder="Write your password" type="password" />
+                        </div>
+
+                        <div class="space-y-4">
+                            <button class="w-full rounded-full bg-primary-color px-4 py-3 font-medium text-white transition duration-200 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-primary-color focus:ring-offset-2">Register</button>
+                        </div>
+
+                        <div class="text-center">
+                            <p class="text-sm text-gray-color sm:text-base">
+                                Already have an account?
+                                <a class="font-medium text-primary-color transition-colors duration-200 hover:text-green-600" href="login.html"> Login </a>
+                            </p>
+                        </div>
+                    </form>
+                </section>
+
+                <!-- Banner Section -->
+                <section id="banner" class="relative hidden h-full md:block md:w-1/2">
+                    <!-- Background Image -->
+                    <div id="Background" class="absolute inset-0 h-full w-full">
+                        <img src="assets/images/bgRegister.webp" alt="Background image" class="h-full w-full object-cover" />
+                    </div>
+
+                    <!-- Main Image -->
+                    <div class="relative flex h-full items-center justify-center">
+                        <div class="relative flex flex-col items-center">
+                            <img alt="Meeting" class="h-[600px]" src="assets/images/registerImage3.webp" />
+                            <img alt="User avatar" class="absolute bottom-1 right-0 z-20 h-12" src="assets/images/registerImage2.webp" />
+                            <img alt="Decorative image" class="absolute -bottom-8 -left-16 h-44 w-auto" src="assets/images/registerImage1.webp" />
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </body>
+</html>
